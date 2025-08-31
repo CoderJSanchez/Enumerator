@@ -27,6 +27,51 @@ It runs Nmap, scrapes **HTTP/HTTPS** services automatically, and lets you input 
 - I like to use `batcat` to open the `.md` file.  It makes it look really nice.
 
 ---
+# Demo
+**Run Enumerator**
+- You can see the basic command
+- It shows you where it's saving the intel
+- It shows you the Nmap command it's using
+  
+![start enumerator](docs/1.png)
+
+**Nmap runs**
+- Nmap will run as you would normally expect it to
+
+![nmap runs](docs/2.png)
+
+**HTTP Scraping for versions**
+- Enumerator will identify HTTP ports
+- It will then try identify text that looks like version identifiers
+- The purpose is to help identify possible service versions that might be hard to spot
+
+![scraping](docs/3.1.png)
+
+**Enter service keywords**
+- Review your Nmap results
+- Enter the keywords from Nmap you want to research further
+- In this screenshot I entered Jetty, Pelican and Zookeeper 3
+
+![keywords](docs/3.0.png)
+
+**Refine keywords if too many results possible**
+- I entered `Jetty` as a keyword which may return to many results
+- Enumerator will ask me to confirm by clicking enter or I can filter by adding something like `Jetty 1.0`
+
+![refine](docs/4.png)
+
+**Results**
+- If a searchsploit result is found, it will be displayed
+- If you passed a service name with common default credentials, they will be displayed (this list is hard coded and can be viwed in the script)
+- If you passed a service name that matches with the title of a SecList .txt file, the name will be displayed for you to review and test
+
+Web Results
+- Enumerator will run three DuckDuckgo searches for each service keyword you pass.  For example, if  you pass in Jetty
+  - It will search for `Jetty exploits` and return the top 3 results
+  - It will search for `Jetty default credentials` and return the top 3 results
+  - It will search for `Jetty exploits github` and return the top 3 results
+ 
+---
 
 ## ✨ Features
 
@@ -134,4 +179,7 @@ intel_2025_08_31_203755/
 ├── report_10.10.10.5_20250831_203755.md
 ├── wordlists/ (if CeWL used)
 ```
+---
+
+
 
