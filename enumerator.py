@@ -880,7 +880,7 @@ Examples:
                         help="Timeout per HTTP target (seconds). Default: 8")
 
     # Keyword guidance
-    parser.add_argument("--prewarn-threshold", type=int, default=20,
+    parser.add_argument("--prewarn-threshold", type=int, default=25,
                         help=("Warn/refine if initial searchsploit lines >= this (e.g., 'Apache' might be noisy). "
                               "Press Enter to keep, or type a refined keyword. Default: 10"))
     parser.add_argument("--no-refine-prompt", action="store_true",
