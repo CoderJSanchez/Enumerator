@@ -1,0 +1,5 @@
+# Core dependencies
+requests>=2.31.0
+
+# Optional (for form parsing in HTTP scraping)
+beautifulsoup4>=4.12.0
