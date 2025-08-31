@@ -112,7 +112,7 @@ cd enumerator
 ```
 
 ### Install dependencies
-These dependencies may already exist on your Kali machine, so you may not need to install anything.  I just wanted to add it to ensure you have what you need. 
+These dependencies may already exist on your Kali machine, so you may not need to install anything.  I just wanted to add it to ensure you have what you need. (`requests` and `beautifulsoup4`)
 ```bash
 pip install -r requirements.txt
 ```
