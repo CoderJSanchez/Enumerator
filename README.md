@@ -65,6 +65,8 @@ It runs Nmap, scrapes **HTTP/HTTPS** services automatically, and lets you input 
 - If you passed a service name with common default credentials, they will be displayed (this list is hard coded and can be viwed in the script)
 - If you passed a service name that matches with the title of a SecList .txt file, the name will be displayed for you to review and test
 
+![results](docs/5.png)
+
 Web Results
 - Enumerator will run three DuckDuckgo searches for each service keyword you pass.  For example, if  you pass in Jetty
   - It will search for `Jetty exploits` and return the top 3 results
