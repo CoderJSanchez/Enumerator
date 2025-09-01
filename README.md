@@ -4,7 +4,7 @@
 
 It runs Nmap, scrapes **HTTP/HTTPS** services automatically, and lets you input additional service keywords for deeper research (e.g., MySQL, Tomcat, RaspAP).  Then it helps you quickly research vulnerabilities, exploits, and default credentials. All findings are saved into a clean, timestamped `intel_*` folder with a Markdown report that you can use for documentation.
 
-![Enumerator Youtube Overview Video](https://www.youtube.com/watch?v=ohMG-vosE0E)
+[Enumerator Youtube Overview Video](https://www.youtube.com/watch?v=ohMG-vosE0E)
 
 ### Workflow **without** Enumerator
 - Run Nmap
